@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accueil.css">
+    <!--liaison avec le css-->
+    <title>GéoQuiz</title>
+</head>
+
+<body id="pbody" class="classDeBaseBody">
+
+    <h1 id="h1" class="classDeBase">Bienvenue Sur Notre Jeu Ludique GéoQuiz !</h1>
+
+    <div class="purpleButton">
+        <label class="switch">
+            <input type="checbox" id="purpleMode">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <form id="myForm" class="pseudo">
+        <div id="souspseudo" class="souspseudo">
+            <label for="pseudo">ENTREZ VOTRE PSEUDO :</label>
+            <input type="text" name="pseudo" id="pseudo" minlength="1" maxlength="20">
+            <!--zone de texte pour pseudo-->
+            <input type="submit" id="valid" value="VALIDER" class="btn">
+        </div>
+
+        <!-- <div> -->
+            <!-- envoie du pseudo dans l'url -->
+        <!-- </div>  -->
+        <div class="ctnBtn">
+            <input id="linkToGame" class="btn" type="button" value="JOUER">
+            <input id="regle" class="btn" type="button" value="REGLES">
+            <!--bouton règles-->
+        </div>
+        <span id="reglement">Le but du jeu est de cliquer sur le pays qui vous est demandé. Vous devez gagner le plus de
+            points possible dans la limite de temps imparti. Plus vous trouverez de pays, plus vous gagnerez de points.
+            La partie se termine automatiquement à la fin du temps imparti. Voilà, vous savez tout !</span>
+    </form>
+
+    <h2 id="h2" class="classDeBase">Ici tu peux réviser les pays avant de jouer, mémorise bien cette carte !</h2>
+
+    <!-- <div class="ctnPicAndBtn"> -->
+    <img src="http://planetejeanjaures.free.fr/geo/europe/carte_europe.jpg" width=65%>
+    <!--carte de l'europe-->
+
+    <!-- </div> -->
+
+    <p class="halloffame" id="demo">créé par</p>
+
+    <script type="text/javascript" src="accueil.js"></script>
+    <!--lien avec le js-->
+</body>
+
+</html>
